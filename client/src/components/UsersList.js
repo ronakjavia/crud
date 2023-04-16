@@ -20,7 +20,7 @@ const UsersList = ({ userData, fetchUsersData, BASE_URL }) => {
         }
       }
     } catch (error) {
-      toast.error(e.response.data.message)
+      toast.error(error.response.data.message)
     }
   }
 
@@ -68,7 +68,7 @@ const UsersList = ({ userData, fetchUsersData, BASE_URL }) => {
                   userData.map((user) => (
                     <tr key={user._id}>
                       <td className="px-4 py-3">{user.name}</td>
-                      <td className="px-4 py-3">user {user.email}</td>
+                      <td className="px-4 py-3">{user.email}</td>
                       <td className="px-4 py-3">
                         <button
                           className="hover:text-green-500"

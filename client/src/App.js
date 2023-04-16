@@ -2,7 +2,6 @@ import Form from './components/Form'
 import UsersList from './components/UsersList'
 
 import axios from 'axios'
-import { Toaster } from 'react-hot-toast'
 
 import './App.css'
 import { useState, useEffect } from 'react'
