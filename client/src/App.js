@@ -6,7 +6,7 @@ import axios from 'axios'
 import './App.css'
 import { useState, useEffect } from 'react'
 
-const BASE_URL = ''
+const BASE_URL = 'https://react-crud-m64b.onrender.com'
 function App() {
   const [userData, setUserData] = useState(null)
 
